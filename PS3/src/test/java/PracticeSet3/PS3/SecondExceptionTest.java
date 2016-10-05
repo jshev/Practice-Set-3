@@ -1,15 +1,15 @@
 package PracticeSet3.PS3;
 
-public class ExceptionTest {
+public class SecondExceptionTest {
 	
 	public static void main(String[] args) throws InsufficientFundsException, WrongDepositException {
 		
-		//same test but trying to withdraw $25000 rather than $2500
+		//same test but deposit is negative
 		
 		Account bigMoney = new Account(1122, 20000);
 		bigMoney.setAnnualInterestRate(4.5);
-		bigMoney.withdraw(25000);
-		bigMoney.deposit(3000);
+		bigMoney.withdraw(2500);
+		bigMoney.deposit(-3000);
 		bigMoney.getBalance();
 		
 		System.out.printf("The account balance is $%.2f", bigMoney.getBalance());

@@ -58,8 +58,13 @@ public class Account {
 		}
 	}
 	
-	public void deposit(double depositAmount) {
-		balance = balance + depositAmount;
+	public void deposit(double depositAmount) throws WrongDepositException {
+		if (depositAmount > 0) {
+			balance = balance + depositAmount;
+		}
+		else {
+			throw new WrongDepositException();
+		}
 	}
 
 }

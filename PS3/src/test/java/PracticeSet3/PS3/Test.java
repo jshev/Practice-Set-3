@@ -2,7 +2,7 @@ package PracticeSet3.PS3;
 
 public class Test {
 
-	public static void main(String[] args) throws InsufficientFundsException {
+	public static void main(String[] args) throws InsufficientFundsException, WrongDepositException {
 		
 		Account bigMoney = new Account(1122, 20000);
 		bigMoney.setAnnualInterestRate(4.5);
